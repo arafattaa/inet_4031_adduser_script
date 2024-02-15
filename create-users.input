@@ -1,0 +1,20 @@
+user04:pass04:Last04:First04:group01
+user05:pass05:Last05:First05:group02
+user06:pass06:Last06:First06:group01,group02
+user07:pass07:Last07:First07:-
+#user08:pass08:Last08:First08:group01
+user09:Last09:First09:group09 
+            Ultimate List Processing Language
+  
+The input file above is a colon (:) delimited file.
+
+              Each line defines a user, and each user has 5 fields, separated by
+              a ':'. The fields in left-to-right order are username, password,
+              last name, first name and group list. '-' indicates an empty group
+              list, and any lines that start with '#' are commented/disabled. 
+
+		  In the Python code locate the Regex and other checks that process the 
+  input file delimiters. Notice that the group field after the final colon 
+  is also delimited by the comma.  A user can be a part of one, multiple, or 
+  no groups.
+
